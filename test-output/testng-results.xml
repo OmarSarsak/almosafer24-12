@@ -1,49 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-02T06:42:41 EET" name="Default suite" finished-at="2024-02-02T06:42:56 EET" duration-ms="14659">
+  <suite started-at="2024-02-05T14:11:33 EET" name="Default suite" finished-at="2024-02-05T14:14:18 EET" duration-ms="165244">
     <groups>
     </groups>
-    <test started-at="2024-02-02T06:42:41 EET" name="Default test" finished-at="2024-02-02T06:42:56 EET" duration-ms="14659">
+    <test started-at="2024-02-05T14:11:33 EET" name="Default test" finished-at="2024-02-05T14:14:18 EET" duration-ms="165244">
       <class name="AlmosaferWeb.Omar">
-        <test-method is-config="true" signature="mySetUp()[pri:0, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:41 EET" name="mySetUp" finished-at="2024-02-02T06:42:51 EET" duration-ms="10603" status="PASS">
+        <test-method is-config="true" signature="mySetUp()[pri:0, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:11:33 EET" name="mySetUp" finished-at="2024-02-05T14:13:03 EET" duration-ms="90238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mySetUp -->
-        <test-method signature="CheckTheDefualtlanguageIsEnglish()[pri:1, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:52 EET" name="CheckTheDefualtlanguageIsEnglish" finished-at="2024-02-02T06:42:52 EET" duration-ms="57" status="PASS">
+        <test-method signature="CheckTheDefualtlanguageIsEnglish()[pri:1, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:04 EET" name="CheckTheDefualtlanguageIsEnglish" finished-at="2024-02-05T14:13:04 EET" duration-ms="653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckTheDefualtlanguageIsEnglish -->
-        <test-method signature="CheckTheDefualtCurrencyIsSAR()[pri:2, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:52 EET" name="CheckTheDefualtCurrencyIsSAR" finished-at="2024-02-02T06:42:52 EET" duration-ms="44" status="PASS">
+        <test-method signature="CheckTheDefualtCurrencyIsSAR()[pri:2, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:04 EET" name="CheckTheDefualtCurrencyIsSAR" finished-at="2024-02-05T14:13:06 EET" duration-ms="1445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckTheDefualtCurrencyIsSAR -->
-        <test-method signature="CheckContactNumber()[pri:3, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:52 EET" name="CheckContactNumber" finished-at="2024-02-02T06:42:52 EET" duration-ms="37" status="PASS">
+        <test-method signature="CheckContactNumber()[pri:3, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:06 EET" name="CheckContactNumber" finished-at="2024-02-05T14:13:06 EET" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckContactNumber -->
-        <test-method signature="CheckQitafLogo()[pri:4, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:52 EET" name="CheckQitafLogo" finished-at="2024-02-02T06:42:52 EET" duration-ms="84" status="PASS">
+        <test-method signature="CheckQitafLogo()[pri:4, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:06 EET" name="CheckQitafLogo" finished-at="2024-02-05T14:13:06 EET" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckQitafLogo -->
-        <test-method signature="CheckHotelTabIsNotSelectedByDefualt()[pri:5, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:52 EET" name="CheckHotelTabIsNotSelectedByDefualt" finished-at="2024-02-02T06:42:52 EET" duration-ms="50" status="PASS">
+        <test-method signature="CheckHotelTabIsNotSelectedByDefualt()[pri:5, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:06 EET" name="CheckHotelTabIsNotSelectedByDefualt" finished-at="2024-02-05T14:13:06 EET" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckHotelTabIsNotSelectedByDefualt -->
-        <test-method signature="CheckDepatureDateAndReturnDate()[pri:6, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:52 EET" name="CheckDepatureDateAndReturnDate" finished-at="2024-02-02T06:42:52 EET" duration-ms="258" status="PASS">
+        <test-method signature="CheckDepatureDateAndReturnDate()[pri:6, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:06 EET" name="CheckDepatureDateAndReturnDate" finished-at="2024-02-05T14:13:06 EET" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckDepatureDateAndReturnDate -->
-        <test-method signature="RandomMethodToChangeTheLanguage()[pri:7, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:52 EET" name="RandomMethodToChangeTheLanguage" finished-at="2024-02-02T06:42:55 EET" duration-ms="2813" status="PASS">
+        <test-method signature="RandomMethodToChangeTheLanguage()[pri:7, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:06 EET" name="RandomMethodToChangeTheLanguage" finished-at="2024-02-05T14:13:16 EET" duration-ms="9708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RandomMethodToChangeTheLanguage -->
-        <test-method signature="switchToHotelTab()[pri:8, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:55 EET" name="switchToHotelTab" finished-at="2024-02-02T06:42:56 EET" duration-ms="612" status="PASS">
+        <test-method signature="switchToHotelTab()[pri:8, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:16 EET" name="switchToHotelTab" finished-at="2024-02-05T14:13:30 EET" duration-ms="14496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- switchToHotelTab -->
-        <test-method is-config="true" signature="myPostTest()[pri:0, instance:AlmosaferWeb.Omar@3234f74e]" started-at="2024-02-02T06:42:56 EET" name="myPostTest" finished-at="2024-02-02T06:42:56 EET" duration-ms="0" status="PASS">
+        <test-method signature="RandomlySelectTheVisitorNumber()[pri:9, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:30 EET" name="RandomlySelectTheVisitorNumber" finished-at="2024-02-05T14:13:45 EET" duration-ms="14929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RandomlySelectTheVisitorNumber -->
+        <test-method signature="makeSurePageIsFullyLoaded()[pri:10, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:13:45 EET" name="makeSurePageIsFullyLoaded" finished-at="2024-02-05T14:14:11 EET" duration-ms="25859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSurePageIsFullyLoaded -->
+        <test-method signature="sortTheItemsBasedOnThePrice()[pri:11, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:14:11 EET" name="sortTheItemsBasedOnThePrice" finished-at="2024-02-05T14:14:18 EET" duration-ms="6832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortTheItemsBasedOnThePrice -->
+        <test-method is-config="true" signature="myPostTest()[pri:0, instance:AlmosaferWeb.Omar@275fe372]" started-at="2024-02-05T14:14:18 EET" name="myPostTest" finished-at="2024-02-05T14:14:18 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myPostTest -->

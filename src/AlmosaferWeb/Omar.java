@@ -4,8 +4,9 @@ import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Random;
-
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -105,15 +106,76 @@ public class Omar extends Project {
 	public void switchToHotelTab() {
 		WebElement HotelTab = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
 		HotelTab.click();
-		
-		if(driver.getCurrentUrl().contains("ar")) {
-			WebElement SearchCityInput = driver.findElement(By.cssSelector("input[placeholder='البحث عن فنادق أو وجهات']"));
-			SearchCityInput.sendKeys(citiesInArabic[randomArabicCity]);
-		}
-		else {
+
+		if (driver.getCurrentUrl().contains("ar")) {
+			WebElement searchCityInput = driver.findElement(By.cssSelector("input[placeholder='البحث عن فنادق أو وجهات']"));
+
+			searchCityInput.sendKeys(citiesInArabic[randomArabicCity]);
+		} else {
 			WebElement SearchCityInput = driver.findElement(By.cssSelector("input[placeholder='Search for hotels or places']"));
+
 			SearchCityInput.sendKeys(citiesInEnglish[randomEnglishCity]);
 		}
+		WebElement theList = driver.findElement(By.className("UzzIN")); 
+				
+		theList.findElements(By.tagName("li")).get(1).click();
+
+	}
+	
+	@Test(priority = 9)
+	public void RandomlySelectTheVisitorNumber() {
+		WebElement visitor = driver.findElement(By.tagName("select"));
+		Select selector = new Select(visitor);
+		if(driver.getCurrentUrl().contains("ar")) {
+			selector.selectByVisibleText("1 غرفة، 1 بالغ، 0 أطفال");;
+
+	}else {
+		selector.selectByVisibleText("1 Room, 1 Adult, 0 Children");
+	}
+	driver.findElement(By.xpath("//*[@id=\"uncontrolled-tab-example-tabpane-hotels\"]/div/div[2]/div/div[4]/button")).click();
+	
+}
+	
+	@Test(priority = 10)
+	
+	public void makeSurePageIsFullyLoaded() throws InterruptedException {
+		Thread.sleep(25800);
+		String SearchResult = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[2]/section/span")).getText();
+		
+		if(driver.getCurrentUrl().contains("ar")) {
+			boolean Actualresult = SearchResult.contains("وجدنا") ;
+			assertEquals(Actualresult, true); 
+		}
+		
+		else {
+			boolean Actualresult = SearchResult.contains("found") ;
+			assertEquals(Actualresult, true); 
+
+		}
+	}
+	
+	@Test(priority = 11)
+	public void sortTheItemsBasedOnThePrice() throws InterruptedException {
+		Thread.sleep(5000);
+		WebElement LowestPriceButton = driver
+				.findElement(By.xpath("//*[@id=\"__next\"]/div[2]/div[1]/div[2]/section[1]/div/button[2]"));
+
+		LowestPriceButton.click();
+
+		WebElement HotelsContainer = driver.findElement(By.cssSelector(".sc-htpNat.KtFsv.col-9"));
+
+		List<WebElement> thePricesList = HotelsContainer.findElements(By.className("Price__Value"));
+
+		String LowestPriceOnTheList = thePricesList.get(0).getText();
+		int LowestPriceOnTheListAsNumber = Integer.parseInt(LowestPriceOnTheList);
+
+		String HighestPriceOntheList = thePricesList.get(thePricesList.size() - 1).getText();
+		int HighestPriceOntheListAsNumber = Integer.parseInt(HighestPriceOntheList);
+
+		System.out.println("this the minimum value " + LowestPriceOnTheList);
+		System.out.println("this the maximum value " + HighestPriceOntheList);
+
+		assertEquals(HighestPriceOntheListAsNumber > LowestPriceOnTheListAsNumber, true);
 
 	}
 	
